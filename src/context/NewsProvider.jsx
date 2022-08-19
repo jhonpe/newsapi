@@ -12,7 +12,7 @@ const NewsProvider = ({ children }) => {
 	useEffect(() => {
 		const consultarAPI = async () => {
 			const url = `https://newsapi.org/v2/top-headlines?country=ve&category=${category}&apiKey=${
-				import.meta.env.VITE_API_KEY
+				import.meta.env.VITE_SOME_KEY
 			}`;
 
 			const { data } = await axios(url);
@@ -26,7 +26,7 @@ const NewsProvider = ({ children }) => {
 	useEffect(() => {
 		const consultarAPI = async () => {
 			const url = `https://newsapi.org/v2/top-headlines?country=ve&page=${page}&category=${category}&apiKey=${
-				import.meta.env.VITE_API_KEY
+				import.meta.env.VITE_SOME_KEY
 			}`;
 
 			const { data } = await axios(url);
